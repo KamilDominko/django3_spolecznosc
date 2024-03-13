@@ -30,7 +30,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # Moje aplikacje.
-    'account.apps.AccountConfig', # Musi być pierwsze, bo django patrzy po kolei
+    'account.apps.AccountConfig',
+    # Musi być pierwsze, bo django patrzy po kolei
     # Domyślne aplikacje.
     'django.contrib.admin',
     'django.contrib.auth',
@@ -115,3 +116,7 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOGIN_REDIRECT_URL = 'dashboard'
+LOGIN_URL = 'login'
+LOGOUT_URL = 'logout'
