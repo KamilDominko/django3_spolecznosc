@@ -34,5 +34,8 @@ urlpatterns = [
     #      name='password_reset_complete'),
 
     # Adresy URL uwierzytelniania z django zastępujący wszystkie z auth_views.
-    path('', include('django.contrib.auth.urls'))
+    path('', include('django.contrib.auth.urls')),
+
+    # Adres URL do rejestracji użytkownika.
+    path('register/', views.register, name='register')
 ]
