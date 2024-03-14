@@ -37,5 +37,8 @@ urlpatterns = [
     path('', include('django.contrib.auth.urls')),
 
     # Adres URL do rejestracji użytkownika.
-    path('register/', views.register, name='register')
+    path('register/', views.register, name='register'),
+
+    # Adres URL do edycji porfilu użytkownika.
+    path('edit/', views.edit, name='edit'),
 ]
